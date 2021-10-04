@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.none {
+  display: none;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin: 20vh auto;
+}
+
+body .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Lexend Deca', sans-serif;
+  letter-spacing: 1px;
+  padding: 80px;
+  border-radius: 7px 0 0 7px;
+  background-color: #1b1938;
+}
+
+body .container .content .head {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+body .container .content .head span {
+  color: #aa5cdb;
+}
+
+body .container .content .text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+body .container .content .our-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .content .our-work .count p {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+body .container .content .our-work .count p:first-child {
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  body .container .content {
+    padding: 50px;
+  }
+  body .container .content .head {
+    font-size: 32px;
+  }
+  body .container .content .text {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  body .container .content .count p:first-child {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  body .container {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  body .container .content {
+    padding: 30px;
+  }
+  body .container .content .head {
+    font-size: 26px;
+  }
+  body .container .content .count p:first-child {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  body .container {
+    -ms-grid-columns: (minmax(300px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+  body .container .content {
+    border-radius: 0 0 7px 7px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  body .container .content .text {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 577px) {
+  body .container .content .our-work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  body .container .content .our-work .count {
+    margin-top: 25px;
+  }
+}
+
+body .container .image {
+  position: relative;
+}
+
+body .container .image img {
+  border-radius: 0 7px 7px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  body .container .image .mob {
+    border-radius: 7px 7px 0 0;
+    display: block;
+  }
+  body .container .image .desktop {
+    display: none;
+  }
+}
+
+body .container .image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #aa5cdb;
+  opacity: .5;
+  border-radius: 0 7px 7px 0;
+}
+
+@media (max-width: 767px) {
+  body .container .image::before {
+    border-radius: 7px 7px 0 0;
+  }
+}
+
+body .attribution {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body .attribution p {
+  margin-bottom: 10px;
+}
+
+body .attribution p a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
